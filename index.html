@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Get Your Online Scratch Followers!</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/inputStyle.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <div id="view">
+
+    <div class="container">
+      <div class="box">
+        <span>Enter a Scratch username: </span>
+        <input type=" text" id="username" value="">
+      </div>
+      <div class="box">
+        <span>Amount of pages (max.):</span>
+        <input type="number" id="pages" value="100">
+      </div>
+      <div class="box">
+        <span>Offset pages:</span>
+        <input type="number" id="offset" value="0">
+      </div>
+    </div>
+    <div class="button" id="load">load</div><br>
+    <div id="loading" style="display:none">
+      <progress max="100" value="75" id="progress"></progress>
+      <div class="loading">Loading ...</div>
+    </div>
+
+    <div id="infos">
+      <div class="info">
+        View example project:<br>
+       <a href="https://scratch.mit.edu/projects/782271154/" target="_blank" rel="noopener noreferrer"><img src="download (5).png"></a>
+      </div>
+      <div class="info" >
+        <div id="thanks">It took me so long to code, design and finally find a way to publish this site. It would be very nice if you love the <a class="username" href="https://scratch.mit.edu/projects/784319599/" target="_blank" rel="noopener noreferrer">project on Scratch</a>, to make the site more popular, or even <a class="username" href="https://scratch.mit.edu/users/ironkid1212" target="_blank" rel="noopener noreferrer">follow me</a>! :D Thanks!!!</div>
+        <img src="myAvatar.svg" width="100px">
+      </div>
+    </div>
+
+    <div id="downloads" style="display:none">
+      <div class="download-option" style="width:300px; height: 250px">
+      <a class="button" id="txt">Download as a txt file</a>
+      <p>Simply right-click on a Scratch list, choose "import" and then select this ".txt" file. <br>Now you have a list with the scrachers you follow!</p>
+      </div>
+      <div class="download-option" style="width:300px; height: 250px">
+      <a class="button" id="csv">Download as CSV</a>
+      <p>A CSV (stands for "Comma Seperated Values") file is useful if you want to use the list in another programming language such as Java & Python.</p>
+      </div>
+      <div class="download-option" style="width:300px; height: 250px">
+      <a class="button" id="json">Download as JSON</a>
+      <p>JSON (JavaScript Obect Notation) can be used for other programming languages as well. It also has the same format as a list or array in most programming languages.</p>
+      </div>
+      <div  class="preview">
+        <h1>Uploaded Followed:</h1>
+        <div id="preview"></div>
+      </div>
+    </div>
+    <div id="title">
+      <h1>Download The Users You Follow! (Scratch)  |  <span id="time"> </span></h1>
+    </div>
+
+   <!--<a href="index.html"><button class="button2">Download a list of your followers!</button></a>-->
+
+   <div id="footer"> Made by <a class="username"  href="https://scratch.mit.edu/users/ironkid1212/" style="color:#55FFFF">@ironkid1212</a>. Not affiliated with The Scratch Team or The Scratch Foundation.  Inspired & helped by <a class="username"  href="https://scratch.mit.edu/users/Dr_Lego/" style="color:#55FFFF">@Dr_Lego</a>.  Coded by <a class="username"  href="https://scratch.mit.edu/users/ironkid1212/" style="color:#55FFFF">@ironkid1212</a>.</div>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
